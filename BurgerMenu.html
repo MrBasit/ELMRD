@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  .burger.menu{
+    font-size: 20px;
+    width: 100%;
+    background-color: #00f;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .burger.menu li{
+    height: 50px;
+    width: 100%;
+    text-align: left;
+    color: #fff;
+    display: flex;
+   align-items: center;
+   cursor: pointer;
+
+  }
+  .burger.menu li:hover{
+    background-color: #00a;
+  }
+  .burger.menu li p {
+    /* width: 100%;
+    height: 100%; */
+    cursor: pointer;
+    margin-left: 80px;;
+  }
+  .burger.menu li p:hover{
+  }
+  .burger.menu .head{
+    height: 180px;
+    width: 180px;
+  }
+  .burger.menu > :nth-child(1) > p{
+    width: 180px;
+    margin-left: 90px;
+  }
+  
+  </style>
+  <title>Burger Menu</title>
+</head>
+<body>
+  <ul class="burger menu">
+    <li class="head"><p>X</p></li>
+    <li><p>Home</p></li>
+    <li><p>Blogs</p></li>
+    <li><p>About</p></li>
+    <li><p>Contact</p></li>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,698 @@
+/*
+=============================
+GLOBAL STYLE
+=============================
+*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+	background: #fff;
+}
+/*
+=============================
+COMMON STYLING
+=============================
+*/
+:root{
+	--h-size: 3em;
+	--letter-spacing: 2px;
+	--padding: 30px 0px;
+	--line-height: 55px;
+	--line-height2: 30px;
+	--bg-play-icon: rgba(77, 140, 183,0.5);
+}
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+.text-white-color{
+	color: #fff;
+}
+.text-blue-color{
+	color: #1369A2;
+}
+.font-weight{
+	font-weight: normal;
+}
+.line-height{
+	line-height: 46px;
+}
+.border-right{
+	border-right: 2px solid black; 
+}
+.border-radius{
+	border-radius: 20px;
+}
+.lettter-spacing{
+	letter-spacing: 2px;
+}
+.padding-top{
+	padding-top: 30px; 
+}
+/**/
+.font-size{
+	font-size: 2.3em;
+}
+.padding-top-bottom{
+	padding: 20px 0px 20px 0px;
+}
+/**/
+.font-size5{
+	font-size: 5em;
+}
+.text-align-justify{
+	text-align: justify;
+}
+
+/*
+=====================================================
+COMMON CONTAINER (DISCRIPTION)( 6 )( 5 )( footer )
+=====================================================
+*/
+.container{
+	max-width: 900px;
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-between;
+}
+/*
+=============================
+HEADER Section
+=============================
+*/
+header{
+	width: 100%;
+	background: url(image/beach-clouds-dawn-1370725.jpg);
+	background-size: cover;
+}
+header a{
+	text-decoration: none;
+	display: inline-block;
+	font-size: 35px;
+}
+.container-header{
+	max-width: 900px;
+	margin: auto;
+}
+.main-header-contant{
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+nav{
+	width: 100%;
+	height: 180px;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	align-items: center;
+}
+nav > :nth-child(1) i{
+	font-size: 25px;
+	transition: 0.4s linear;
+}
+nav > :nth-child(1) i:hover{
+	transform: scale(1.2);
+}
+nav > :nth-child(3) i{
+	font-size: 25px;
+	transition: 0.4s linear;
+}
+nav > :nth-child(3) i:hover{
+	transform: scale(1.2);
+}
+nav > :nth-child(2) img{
+	width: 75px;
+}
+.Child2{
+	width: 70%;
+	height: 350px;
+	display: flex;
+	align-self: flex-end;
+	justify-content: space-between;
+}
+.Child2 > :nth-child(1){
+	display: flex;
+	align-items: flex-end;
+}
+.Child2 > :nth-child(1) i{
+	font-size: 30px;
+}
+.Child2 > :nth-child(1) img{
+	width: 35px;
+}
+.Child2 > :nth-child(2){
+	align-self: flex-end;
+	margin-bottom: 35px;
+}
+.Child2 > :nth-child(2) ul{
+	list-style: none;
+	background: #fff;
+	border-radius: 20px;
+}
+.Child2 > :nth-child(2) ul li{
+	margin: 15px 0px 15px 0px;
+}
+.Child2 > :nth-child(2) ul li a i{
+	font-size: 23px;
+	transition: 0.2s linear;
+}
+.Child2 > :nth-child(2) ul li a i:hover{
+	transform: scale(1.2);
+}
+.Child2 > :nth-child(2) ul li a{
+	padding: 8px 8px;
+}
+
+
+/* ------------------------------- */
+@keyframes example{
+	from{
+		width: 0%;
+	}
+	to {
+		width:90%;
+	}
+}
+
+.burger.menu{
+	font-size: 20px;
+	width: 90%;
+	background-color: #1369A2;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	display: none;
+	animation-name: example;
+	animation-duration: 1s;
+	top: 0px;
+	left: 0px; 
+	z-index: 10;
+}
+.burger.menu.active{
+	display: block;
+}
+.burger.menu li{
+	height: 90px;
+	width: 100%;
+	text-align: left;
+	color: #fff;
+	display: flex;
+ align-items: center;
+ cursor: pointer;
+
+}
+.burger.menu li:hover{
+	background-color: rgb(14, 77, 119);
+}
+.burger.menu li p {
+	width: 100%;
+	/* height: 100%; */
+	text-align: center;
+	cursor: pointer;
+	/* margin-left: 80px;; */
+}
+.burger.menu li p:hover{
+}
+.burger.menu .head{
+	height: 180px;
+	/* width: 180px; */
+}
+.burger.menu > :nth-child(1) > p{
+	/* width: 180px; */
+	/* margin-left: 90px; */
+}
+
+/* ---------------------------- */
+
+
+/*
+=============================
+DESCRIPTION
+=============================
+*/
+#Desciption{
+	width: 100%;
+}
+#Desciption .contant{
+	width: 700px;
+	height: 700px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+#Desciption .contant h1{
+	font-size: var(--h-size);
+	padding: var(--padding);
+	letter-spacing: var(--letter-spacing);
+	line-height: var(--line-height);
+}
+#Desciption .contant h4{
+	line-height: var(--line-height2);
+	margin-top: 10px;
+	padding: 0px 75px 0px 75px;
+}
+
+/*
+=============================
+THIRD SECTION
+=============================
+*/
+#main-3{
+	width: 100%;
+	background: #fff;
+}
+.container3{
+	margin: auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.bg-img1{
+	width: 100%;
+	height: 450px;
+	background: url('image/matt-le-SJSpo9hQf7s-unsplash.jpg');
+	background-size: cover;
+	background-position: bottom;
+	clip-path: polygon(0% 0%, 0% 100%, 100% 80%, 100% 0%);
+}
+#Cards{
+	/* width: 900px; */
+	/* height: 350px; */
+	margin: 50px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.card{
+	width: 31%;
+	/* height: 240px; */
+	display: flex;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#Cards .card i{
+	transition: 0.2s linear;
+	color: black;
+}
+#Cards .card i:hover{
+	transform: scale(1.2);
+}
+/*
+=============================
+FOURTH SECTION
+=============================
+*/
+#Slider{
+	position: relative;
+}
+.main-4{
+	width: 100%;
+	background-size: cover;
+}
+#Slider > :nth-child(1){
+	background-image: url(image/clay-banks-LjqARJaJotc-unsplash.jpg);
+}
+#Slider > :nth-child(2){
+	background-image: url(./image/philipp-kammerer-6Mxb_mZ_Q8E-unsplash.jpg);
+}
+#Slider > :nth-child(3){
+	background-image: url(./image/mesut-kaya-eOcyhe5-9sQ-unsplash.jpg);
+}
+
+.gradient{
+	background-color: rgba(77, 140, 183,0.5);
+	width: 100%;
+}
+.container4{
+	margin: auto;
+	height: 800px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+}
+.contant-main{
+	width: 100%;
+	height: 230px;
+	background: #1369A2;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.contant-main .contant{
+	width: 900px;
+}
+.contant-main .contant h1{
+	padding-bottom: 30px;
+}
+.contant-main .contant h2{
+	margin-top: 30px;
+}
+.contant-main .contant a h2 i{
+	font-size: 20px;
+}
+#Dots{
+	position: absolute;
+	/* left: 50%; */
+	bottom: 5%;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+.dot{
+	width: 20px;
+	height: 20px;	
+	border-radius: 50%;
+	background-color: #fff;
+	margin: 10px;
+	cursor: pointer;
+	border: 2px solid #aaa;
+}
+.dot.active{
+	border: 3px solid #333;
+}
+
+/*
+=============================
+FIFTH SECTION
+=============================
+*/
+
+#main-5{
+	width: 100%;
+}
+.main-contant-5{
+	min-height: 750px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#Card{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#Card .card1{
+	position: relative;
+	height: 330px;
+	width: 600px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#Card .card1 img{
+	display: inline-block;
+	width: 390px;
+	height: 240px;
+}
+
+#Card .card1 > :nth-child(1){
+	position: absolute;
+	left: 13%;
+	top: 0;
+	z-index: 3;
+}
+#Card .card1 > :nth-child(2){
+	position: absolute;
+	right: 0;
+	top: 28%;
+	z-index: 2;
+	width: 340px;
+	height: 200px;
+	opacity: 0.8;
+}
+#Card .card1 > :nth-child(3){
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+	width: 340px;
+	height: 200px;
+}
+
+#Card .card2{
+	height: 330px;
+	width: 180px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: right;
+}
+.row{
+	display: flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items: center;
+	height: 300px;
+}
+.row > :nth-child(1){
+	height: 130px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.row input{
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	border-bottom: 2px solid black;
+	color: #808080;
+	width: 300px;
+}
+.row :focus{
+	outline: none;
+}
+.row a{
+	background: #1168A1;
+	padding: 12px 30px 12px 30px;
+	transition: 0.4s;
+	width: 163px;
+	font-size: 15px;
+}
+.row a:hover{
+	background: #fff;
+	color: #1369A2;
+	border-radius: 20px;
+	border: 1.5px solid #1369A2;
+	transform: scale(1.1);
+}
+/*
+=============================
+Videos SECTION
+=============================
+*/
+#Videos-Section{
+	width: 100%;
+}
+.First-video{
+	height: 450px;
+	background: url(image/priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg) no-repeat center /cover;
+	display: flex;
+	padding: 44px 76px;
+}
+.First-video .contant{
+	height: 250px;
+	width: 480px;
+	align-self: flex-end;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.First-video .contant > :nth-child(1){
+	align-self: flex-end;
+}
+.First-video .contant > :nth-child(1) a{
+	padding: 15px 55px 15px 55px;
+	background: var(--bg-play-icon);
+}
+.First-video .contant > :nth-child(1) i{
+	transition: 0.2s linear;
+}
+.First-video .contant > :nth-child(1) i:hover{
+	transform: scale(1.2);
+	color: #1369A2;
+}
+.First-video .contant > :nth-child(2){
+	display: flex;
+	align-items: flex-end;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.First-video .contant > :nth-child(2) > :nth-child(1){
+	width: 260px;
+	align-items: flex-end;
+}
+.First-video .contant > :nth-child(2) > :nth-child(2) ul{
+	display: flex;
+	list-style: none;
+	background: #fff;
+}
+.First-video .contant > :nth-child(2) > :nth-child(2) ul li{
+	margin:8px 13px;
+}
+.First-video .contant > :nth-child(2) > :nth-child(2) ul li a{
+ 	text-align: center;
+	display: flex;
+}
+.First-video .contant > :nth-child(2) > :nth-child(2) i{
+	transition: 0.5s linear;
+	font-size: 20px;
+}
+.First-video .contant > :nth-child(2) > :nth-child(2) i:hover{
+	transform: scale(1.2);
+}
+.Second-Third-video{
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding: 45px 0px 45px 0px;
+}
+.Second-Third-video i{
+	font-size: 18px;
+	transition: 0.2s linear
+}
+.Second-Third-video i:hover{
+	transform: scale(1.2);
+	color: #1369A2;
+}
+.Second-Third-video .card1{
+	width: 35%;
+}
+.Second-Third-video .card1 > :nth-child(1){
+	background: url(image/clay-banks-LjqARJaJotc-unsplash.jpg) no-repeat center /cover;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Second-Third-video .card1 > :nth-child(1) a{
+	padding: 10px 30px 10px 30px;
+	background: var(--bg-play-icon);
+}
+.Second-Third-video .card2{
+	width: 55%;
+}
+.Second-Third-video .card2 > :nth-child(1){
+	background: url('image/my-life-through-a-lens-bq31L0jQAjU-unsplash.jpg') no-repeat center /cover;
+	height: 200px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Second-Third-video .card2 > :nth-child(1) a{
+	padding: 10px 30px 10px 30px;
+	background: var(--bg-play-icon);
+}
+/*
+=============================
+FOOTER
+=============================
+*/
+footer{
+	width: 100%;
+	background: #1369A2;
+}
+.row1{
+	padding: 90px 0px; 
+	text-align: center;
+}
+.row1 > :nth-child(2){
+	padding: 30px 0px;
+}
+.row1 ul{
+	display: flex;
+	list-style: none;
+	margin-left: 160px;
+	padding-top: 45px;
+	height: 110px;
+}
+.row1 ul li{
+	margin: 20px;	
+}
+.row1 ul li a{
+	padding: 10px 50px;
+	background: #fff;
+	transition: 0.3s linear;
+}
+.row1 ul li a:hover{
+	background: #1369A2;
+	border-radius: 20px;
+	border: 1px solid #fff;
+	color: #fff;
+	transform: scale(1.2);
+}
+.row2{
+	min-height: 70px;
+	width: 552px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.row2 h4{
+	line-height: 23px;
+}
+.row3{
+	width: 100%;
+	padding: 75px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;	
+}
+.row3 .nav{
+	min-height: 63px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.row3 .nav ul{
+	display: flex;
+	list-style: none;
+}
+.row3 .nav ul li{
+	margin-right: 75px;
+}
+.row3 .icons ul{
+	list-style: none;
+	background: #fff;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.row3 .icons ul li a{
+	padding: 8px 4px;
+}
+.row3 .icons ul li a i{
+	font-size: 18px;
+	transition: 0.2s linear;
+}
+.row3 .icons ul li a i:hover{
+	transform: scale(1.2);
+}
+.row4{
+	text-align: center;
+	padding: 80px 50px 50px 50px;
+	display: flex;
+}

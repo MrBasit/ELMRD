@@ -1,0 +1,167 @@
+@import url("./style.css");
+/*
+=============================
+COMMON STYLING
+=============================
+*/
+
+/*
+=====================================================
+COMMON CONTAINER (DISCRIPTION)( 6 )( 5 )( footer )
+=====================================================
+*/
+.container{
+    width: 735px;
+}
+/*
+=============================
+Header Section
+=============================
+*/
+nav > :nth-child(2) img{
+    width: 68px;
+}
+.container-header{
+    max-width: 735px;
+}
+.Child2{
+    width: 73%;
+}
+.Child2 > :nth-child(1) a{
+    font-size: 2em;
+}
+.Child2 > :nth-child(2) ul li{
+    margin: 11px 0px;
+}
+.main-header-contant{
+    height: 638px;
+}
+/*
+=============================
+DESCRIPTION
+=============================
+*/
+#Desciption .contant{
+    width: 100%;
+    height: 654px;
+}
+#Desciption .contant h1{
+    font-size: 2.8em;
+}
+#Desciption .contant h4{
+    line-height: 25px;
+}
+/*
+=============================
+THIRD SECTION
+=============================
+*/
+#Cards{
+    width: 735px;
+}
+.bg-img1{
+    height: 378px;
+}
+.card{
+    height: 296px;
+}
+#Cards .card i{
+    font-size: 3.5em;
+}
+
+/*
+=============================
+Fourthth SECTION
+=============================
+*/
+.container4{
+    height: 638px;
+}
+/*
+=============================
+FIFTH SECTION
+=============================
+*/
+#Card{
+    width: 735px;
+}
+#Card .card1{
+    width: 67%;
+}
+#Card .card2{
+    width: 30%;
+}
+.contant-main .contant{
+    width: 90%;
+}
+#Card .card1 img{
+    width: 372px;
+}
+#Card .card1 > :nth-child(2){
+    width: 327px;
+}
+#Card .card1 > :nth-child(3){
+    width: 327px;
+}
+.row{
+    height: 271px;
+}
+.row a{
+    padding: 11px 25px;
+}
+/*
+=============================
+Videos SECTION
+=============================
+*/
+.First-video{
+    width: 100%;
+    height: 385px;
+    padding: 44px 32px;
+}
+.Second-Third-video{
+    width: 100%;
+    padding: 40px 52px;
+}
+.Second-Third-video .card1{
+    width: 47%;
+}
+.Second-Third-video .card2{
+    width: 47%;
+}
+.Second-Third-video .card1 > :nth-child(2) a h1{
+    font-size: 2em;
+    line-height: 38px;
+}
+.First-video .contant > :nth-child(2) > :nth-child(1){
+    font-size: 0.7em;
+    width: 171px;
+}
+/*
+=============================
+Footer
+=============================
+*/
+.row1{
+    padding: 79px 0px;
+}
+.row1 h1{
+    font-size: 3em;
+}
+.row1 > :nth-child(2){
+    padding: 14px 0px;
+}
+.row1 ul{
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
+}
+.row1 ul li a{
+    padding: 9px 40px;
+}
+.row3{
+    padding: 64px 0px;
+}
+.row4{
+    padding: 50px;
+}

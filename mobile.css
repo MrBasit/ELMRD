@@ -1,0 +1,347 @@
+@import url("./style.css");
+
+
+/*
+=====================================================
+COMMON CONTAINER (DISCRIPTION)( 6 )( 5 )( footer )
+=====================================================
+*/
+.container{
+    max-width: 320px;
+}
+/* 
+==================
+Header
+==================
+ */
+ .main-header-contant{
+     height: 300px;
+ }
+ nav{
+     height: 71px;
+     padding: 0px 10px;
+ }
+ nav a{
+    display: flex;
+    align-items: center;
+ }
+ nav > :nth-child(1) i{
+    font-size: 18px;
+}
+ nav > :nth-child(3) i{
+     font-size: 18px;
+ }
+ nav > :nth-child(2) a img{
+     width: 32px;
+ }
+ header a{
+     font-size: 1.1em;
+ }
+ .Child2 > :nth-child(1) img{
+     width: 21px;
+ }
+ .Child2 > :nth-child(1) i{
+     font-size: 15px;
+ }
+ .Child2{
+     height: 200px;
+     margin-right: 20px;
+ }
+ .Child2 > :nth-child(2){
+     margin-bottom: 10px;
+ }
+ .Child2 > :nth-child(2) ul li{
+     margin: 5px 0px;
+ }
+ .Child2 > :nth-child(2) ul li a{
+     padding: 5px 3px;
+ }
+ .Child2 > :nth-child(2) ul li a i{
+     font-size: 0.8em;
+ }
+/* 
+=====================
+Description
+=====================
+ */
+ #Desciption .contant{
+     height: 290px;
+     width: 100%;
+ }
+ #Desciption .contant h1{
+    padding: 0px 5px;
+    font-size: 1.3em;
+    line-height: 32px;
+    letter-spacing: normal;
+ }
+ #Desciption .contant h4{
+    line-height: 18px;
+    font-size: 0.6em;
+    padding: 0px 44px;
+ }
+
+/* 
+======================
+Third Section
+======================
+*/
+.bg-img1{
+    height: 230px;
+}
+#Cards{
+    display: flex;
+    flex-direction: column;
+    /*min-height: 789px;*/
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.card{
+    width: 50%;
+    padding: 0px;
+}
+#Cards > :nth-child(1){
+    border-right: 0px;
+    border-bottom: 2px solid black;
+}
+#Cards > :nth-child(2){
+    border-right: 0px;
+    border-bottom: 2px solid black;
+}
+.card i{
+    font-size: 3.5em;
+}
+.card p{
+    font-size: 0.8em;
+}
+.card h2{
+    font-size: 1.3em;
+}
+/* 4 */
+
+.container4{
+    height: 300px;
+}
+.contant-main{
+    height: auto;
+}
+.contant-main .contant h1{
+    padding: 10px;
+    font-size: 1em;
+}
+.contant-main .contant h3{
+    font-size: 0.6em;
+    padding: 0px 10px;
+}
+.contant-main .contant a h2 i{
+    font-size: 0.8em;
+}
+.contant-main .contant h2{
+    font-size: 1em;
+    padding: 10px;
+    margin: 0px;
+}
+/* 
+====================
+Fifth Section
+====================
+ */
+ .main-contant-5{
+ }
+.main-contant-5 #Card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+#Card .card1{
+    width: 322px;
+    height: 259px;
+}
+#Card .card1 img{
+    width: 234px;
+    height: 166px;
+}#Card .card1 > :nth-child(2){
+    width: 234px;
+    height: 156px;
+}
+#Card .card1 > :nth-child(3){
+    width: 234px;
+    height: 166px;
+}
+#Card .card2{
+    width: 21%;
+    height: 195px;
+}
+#Card .card2 h1{
+    font-size: 1.4em;
+    line-height: 34px;
+}
+.row{
+    height: 227px;
+}
+.row > :nth-child(1){
+    height: 100px;
+}
+.row input{
+    width: 226px;
+    line-height: 39px;
+}
+.row a{
+    padding: 7px 20px;
+    width: 120px;
+    font-size: 0.7em;
+}
+/* 
+=====================
+Video Section
+=====================
+ */
+ .Second-Third-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+ }
+ .Second-Third-video .card1{
+     width: 100% !important;
+     margin-bottom: 40px;
+ }
+
+ .Second-Third-video .card2{
+     width: 100% !important;
+ }
+ .Second-Third-video .card1 > :nth-child(1){
+     height: 361px;
+ }
+ .First-video{
+     width: 95%;
+     padding: 12px;
+     height: 224px;
+ }
+ .First-video .contant{
+    width: 70%;
+    height: 120px;
+ }
+ .First-video .contant > :nth-child(2) > :nth-child(1){
+     width: 50%;
+ }
+ .First-video .contant > :nth-child(2) > :nth-child(1) a{
+    font-size: 0.38em;
+}
+.First-video .contant > :nth-child(2) > :nth-child(2) ul li{
+    margin: 7px 8px;
+}
+.First-video .contant > :nth-child(2) > :nth-child(2) i{
+    font-size: 13px;
+}
+.First-video .contant > :nth-child(1) a{
+    padding: 10px 30px;
+}
+.First-video .contant > :nth-child(1) i{
+    font-size: 0.9em;
+}
+.Second-Third-video .card1{
+    width: 35%;
+}
+.Second-Third-video .card1 > :nth-child(1){
+    height: 154px;
+}
+.Second-Third-video .card1 > :nth-child(1) a{
+    padding: 7px 25px;
+}
+.Second-Third-video i{
+    font-size: 0.9em;
+}
+.Second-Third-video .card1 > :nth-child(2) a h1{
+    line-height: 31px;
+    font-size: 1.7em;
+}
+.Second-Third-video .card1 > :nth-child(2) p{
+    font-size: 0.9em;
+}
+.Second-Third-video .card2{
+    width: 35%;
+}
+.Second-Third-video .card2 > :nth-child(1){
+    height: 154px;
+}
+.Second-Third-video .card2 > :nth-child(1) a{
+    padding: 7px 25px;
+}
+.Second-Third-video .card2 > :nth-child(2) a h1{
+    line-height: 31px;
+    font-size: 1.7em;
+}
+.Second-Third-video .card2 > :nth-child(2) p{
+    font-size: 0.9em;
+}
+/* 
+========================
+footer
+========================
+ */
+ .row1{
+     padding: 25px 0px;
+ }
+ .row1 h1{
+     font-size: 1.6em;
+     
+ }
+ .row1 > :nth-child(2){
+    padding: 5px;
+ }
+ .row1 ul{
+     padding-top: 10px;
+     margin: auto;
+     height: auto;
+     display: flex;
+     justify-content: center;
+ }
+ .row1 ul li{
+     margin: 10px;
+ }
+ .row1 ul li a{
+     padding: 7px 24px;
+     font-size: 0.7em;
+ }
+
+ .row2{
+     width: 100%;
+     padding: 0px 10px;
+ }
+ .row2 h4{
+    font-size: 0.7em;
+    line-height: 18px;
+ }
+ .row3{
+     padding: 33px 10px;
+ }
+ .row3 .nav ul li{
+     margin-right: 8px;
+ }
+ .row3 .nav ul li a{
+    font-size: 0.6em;
+ }
+ .row3 .nav{
+     min-height: 35px;
+     width: 90%;
+    }
+.row3 .icons ul{
+    margin-bottom: 7px;
+}
+ .row3 .icons ul li a i{
+    font-size: 0.8em;
+ }
+ .row3 .icons ul li a{
+     padding: 4px 3px;
+ }
+ .row4{
+     padding: 20px 0px 25px 0px;
+ }
+ .row4 h5{
+     font-size: 0.7em;
+ }
