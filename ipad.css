@@ -10,9 +10,7 @@ COMMON STYLING
 COMMON CONTAINER (DISCRIPTION)( 6 )( 5 )( footer )
 =====================================================
 */
-.container{
-    
-}
+
 /*
 =============================
 Header Section
@@ -22,12 +20,9 @@ nav > :nth-child(2) img{
     width: 68px;
 }
 .container-header{
-    max-width: 735px;
+    max-width: 650px;
 }
 
-.Child2 > :nth-child(1) {
-    height: ;
-}
 .Child2 > :nth-child(1) a{
     font-size: 2em;
 }

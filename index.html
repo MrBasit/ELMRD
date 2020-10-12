@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ELMRD | LOGICADE </title>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/font-awesome icons.css">
 	<link rel="stylesheet" media="(min-width:769px)" type="text/css" href="style.css">
 	<link rel="stylesheet" media="(max-width:768px)" href="./ipad.css">
-	
 	<link rel="stylesheet" media="(max-width:500px)" href="./mobile.css">
 
 
@@ -20,13 +20,24 @@
 			<div class="main-header-contant">
 				<nav>
 					<div>
-						<a class="text-white-color" href="javascript:void(0);" ><i class="fas fa-bars" onclick="ActiveBurger()"></i></a>
+						<a class="text-white-color" href="#" onclick="sideBarFunc()"><i class="fas fa-bars" ></i></a>
 					</div>
 					<div>
 						<a href="#"><img src="image/Artboard 1.png"></a>
 					</div>
 					<div>
-						<a class="text-white-color" href="#"><i class="fas fa-search"></i></a>
+						<div class="search-box">
+							<input type="text" name="search" placeholder="looking for ?">
+							<div class="search-btn">
+								<i class="fas fa-search"></i>
+							</div>
+							<div class="cancel-btn">
+								<i class="fas fa-times"></i>
+							</div>
+							<div class="search-data">
+								
+							</div>
+						</div>
 					</div>
 				</nav>
 				<div class="Child2">
@@ -53,13 +64,16 @@
 						</ul>
 					</div>
 				</div>
-				<ul id="Burger" class="burger menu">
-					<li class="head" onclick="DisableBurger()"><p>X</p></li>
-					<li><p>Home</p></li>
-					<li><p>Blogs</p></li>
-					<li><p>About</p></li>
-					<li><p>Contact</p></li>
-				</ul>
+				<div class="main__sidebar">
+					<ul class="sidebar">
+						<li> <a href="#">Home</a></li>
+						<li> <a href="#">Blogs</a></li>
+						<li> <a href="#">About</a></li>
+						<li> <a href="#">Contact</a></li>
+						<li> <a href="#">Gallery</a></li>
+						<li> <a href="#">Services</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -181,7 +195,7 @@
 			<div class="First-video">
 				<div class="contant">
 					<div>
-						<a class="text-white-color" href="#"><i class="fas fa-2x fa-play"></i></a>
+						<a onclick="trailer(1)" class="text-white-color action" href="#"><i class="fas fa-2x fa-play"></i></a>
 					</div>
 					<div class="latter-spacing font-size">
 						<div>
@@ -206,7 +220,7 @@
 			<div class="Second-Third-video">
 				<div class="card1">
 					<div>
-						<a class="text-white-color" href="#"><i class="fas fa-play"></i></a>
+						<a onclick="trailer(2)" class="text-white-color" href="#"><i class="fas fa-play"></i></a>
 					</div>
 					<div class="text-blue-color">
 					<a href="#"><h1 class="padding-top-bottom text-blue-color font-size latter-spacing line-height">Personal Membership</h1></a>
@@ -215,7 +229,7 @@
 				</div>
 				<div class="card2">
 					<div>
-						<a class="text-white-color" href="#"><i class="fas fa-play"></i></a>
+						<a onclick="trailer(3)" class="text-white-color" href="#"><i class="fas fa-play"></i></a>
 					</div>
 					<div class="text-blue-color">
 					<a href="#"><h1 class="padding-top-bottom text-blue-color font-size line-height latter-spacing">For Employees</h1></a>
@@ -224,6 +238,35 @@
 				</div>
 			</div>
 		</div>
+		<!-- 1st video trailer -->
+		<div class="trailer1">
+			<div class="iframe-container">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/BNVHwDk-8m0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+			</div>
+			<a onclick="closed(1)" class="close" href="#">
+				<i class="fas fa-times"></i>
+			</a>
+		</div>
+		<!-- 2st video trailer -->
+		<div class="trailer2">
+			<div class="iframe-container">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/BNVHwDk-8m0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+			</div>
+			<a onclick="closed(2)" class="close" href="#">
+				<i class="fas fa-times"></i>
+			</a>
+		</div>
+		<!-- 3st video trailer -->
+		<div class="trailer3">
+			<div class="iframe-container">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/BNVHwDk-8m0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+			</div>
+			<a onclick="closed(3)"  class="close" href="#">
+				<i class="fas fa-times"></i>
+			</a>
+		</div>
+
+
 	</section>
 
 	<!-- footer section -->
@@ -271,7 +314,6 @@
 			</div>
 		</div>
 	</footer>
-	<script src="https://kit.fontawesome.com/b6fdcdf49e.js" crossorigin="anonymous"></script>
 	<script src="./main.js"></script>
 </body>
 </html>

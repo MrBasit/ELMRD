@@ -14,54 +14,59 @@ COMMON CONTAINER (DISCRIPTION)( 6 )( 5 )( footer )
 Header
 ==================
  */
- .main-header-contant{
-     height: 300px;
- }
- nav{
-     height: 71px;
-     padding: 0px 10px;
- }
- nav a{
-    display: flex;
-    align-items: center;
- }
- nav > :nth-child(1) i{
-    font-size: 18px;
+
+.container-header {
+    max-width: 320px;
+    margin: auto;
 }
- nav > :nth-child(3) i{
-     font-size: 18px;
- }
- .Child2 > :nth-child(1) a {
-    font-size: 1.4em;
+
+.main-header-contant{
+    height: 300px;
 }
- nav > :nth-child(2) a img{
-     width: 32px;
- }
- header a{
-     font-size: 1.1em;
- }
- .Child2 > :nth-child(1) img{
-     width: 21px;
- }
- .Child2 > :nth-child(1) i{
-     font-size: 15px;
- }
- .Child2{
-     height: 200px;
-     margin-right: 20px;
- }
- .Child2 > :nth-child(2){
-     margin-bottom: 10px;
- }
- .Child2 > :nth-child(2) ul li{
-     margin: 5px 0px;
- }
- .Child2 > :nth-child(2) ul li a{
-     padding: 5px 3px;
- }
- .Child2 > :nth-child(2) ul li a i{
-     font-size: 0.8em;
- }
+
+nav{
+    height: 71px;
+    padding: 0px 10px;
+}
+
+nav a{
+display: flex;
+align-items: center;
+}
+
+nav > :nth-child(1) i{
+font-size: 18px;
+}
+
+nav > :nth-child(2) a img{
+    width: 32px;
+}
+header a{
+    font-size: 1.1em;
+}
+.Child2 > :nth-child(1) img{
+    width: 21px;
+}
+.Child2 > :nth-child(1) i{
+    font-size: 15px;
+}
+.Child2{
+    height: 200px;
+    margin-right: 20px;
+}
+.Child2 > :nth-child(2){
+    margin-bottom: 10px;
+}
+.Child2 > :nth-child(2) ul li{
+    margin: 5px 0px;
+}
+.Child2 > :nth-child(2) ul li a{
+    padding: 5px 3px;
+}
+.Child2 > :nth-child(2) ul li a i{
+    font-size: 0.8em;
+}
+
 /* 
 =====================
 Description
