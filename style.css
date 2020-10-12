@@ -89,8 +89,8 @@ HEADER Section
 */
 header{
 	width: 100%;
-	background: url(image/beach-clouds-dawn-1370725.jpg);
-	background-size: cover;
+	background: url(image/beach-clouds-dawn-1370725.jpg) no-repeat center / cover;
+
 }
 header a{
 	text-decoration: none;
@@ -295,16 +295,17 @@ THIRD SECTION
 	margin: 50px auto;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	
 }
 .card{
-	width: 31%;
+	width: 33%;
 	/* height: 240px; */
 	display: flex;
 	text-align: center;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding-left: 2px;
 }
 #Cards .card i{
 	transition: 0.2s linear;
@@ -508,9 +509,10 @@ Videos SECTION
 	background: url(image/priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg) no-repeat center /cover;
 	display: flex;
 	padding: 44px 76px;
+	justify-content: center;
 }
 .First-video .contant{
-	height: 250px;
+	height: 180px;
 	width: 480px;
 	align-self: flex-end;
 	display: flex;
@@ -518,7 +520,7 @@ Videos SECTION
 	justify-content: space-between;
 }
 .First-video .contant > :nth-child(1){
-	align-self: flex-end;
+	align-self: center;
 }
 .First-video .contant > :nth-child(1) a{
 	padding: 15px 55px 15px 55px;
@@ -645,7 +647,7 @@ footer{
 }
 .row2{
 	min-height: 70px;
-	width: 552px;
+	width: 90%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -655,25 +657,28 @@ footer{
 	line-height: 23px;
 }
 .row3{
-	width: 100%;
+	
 	padding: 75px 0px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: flex-end;	
+	align-items:initial;	
 }
 .row3 .nav{
 	min-height: 63px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: space-between;
+	align-self: center;
 }
 .row3 .nav ul{
 	display: flex;
 	list-style: none;
+	flex-direction: column;
 }
 .row3 .nav ul li{
 	margin-right: 75px;
+	margin-bottom: 33px;
 }
 .row3 .icons ul{
 	list-style: none;

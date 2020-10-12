@@ -11,7 +11,7 @@ COMMON CONTAINER (DISCRIPTION)( 6 )( 5 )( footer )
 =====================================================
 */
 .container{
-    width: 735px;
+    
 }
 /*
 =============================
@@ -24,8 +24,9 @@ nav > :nth-child(2) img{
 .container-header{
     max-width: 735px;
 }
-.Child2{
-    width: 73%;
+
+.Child2 > :nth-child(1) {
+    height: ;
 }
 .Child2 > :nth-child(1) a{
     font-size: 2em;
@@ -35,6 +36,11 @@ nav > :nth-child(2) img{
 }
 .main-header-contant{
     height: 638px;
+}
+header{
+	width: 100%;
+	background: url(image/beach-clouds-dawn-1370725.jpg);
+	background-size: cover;
 }
 /*
 =============================
@@ -57,13 +63,23 @@ THIRD SECTION
 =============================
 */
 #Cards{
-    width: 735px;
+   
+}
+.card {
+    width: 33%;
+    height: 240px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
 }
 .bg-img1{
     height: 378px;
 }
 .card{
-    height: 296px;
+    height: 215px;
+    font-size: 11px;
 }
 #Cards .card i{
     font-size: 3.5em;
@@ -83,7 +99,12 @@ FIFTH SECTION
 =============================
 */
 #Card{
-    width: 735px;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+   
 }
 #Card .card1{
     width: 67%;
@@ -97,6 +118,12 @@ FIFTH SECTION
 #Card .card1 img{
     width: 372px;
 }
+#Card .card1 > :nth-child(1) {
+    position: absolute;
+    left: 7%;
+    top: 0;
+    z-index: 3;
+}    
 #Card .card1 > :nth-child(2){
     width: 327px;
 }
@@ -118,6 +145,7 @@ Videos SECTION
     width: 100%;
     height: 385px;
     padding: 44px 32px;
+   
 }
 .Second-Third-video{
     width: 100%;
@@ -130,8 +158,18 @@ Videos SECTION
     width: 47%;
 }
 .Second-Third-video .card1 > :nth-child(2) a h1{
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 38px;
+    text-align: center;
+}
+.text-align-justify {
+    text-align: center;
+}
+.line-height {
+    line-height: 38px;
+    text-align: center !important;
+    font-size: 1.5em;
+    justify-content: center;
 }
 .First-video .contant > :nth-child(2) > :nth-child(1){
     font-size: 0.7em;
@@ -161,7 +199,34 @@ Footer
 }
 .row3{
     padding: 64px 0px;
+    flex-wrap: nowrap;
+    align-items: initial;
+}
+.row2{
+    width: 100%;
 }
 .row4{
     padding: 50px;
+}
+
+.row3 .nav ul {
+    width: 90%;
+}
+.row3 .nav {
+    min-height: 63px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+}
+.row3 .nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: flex-start;
+    
+} 
+.row3 .nav ul li {
+    margin-right: 45px;
+    margin-bottom: 25px;
 }
