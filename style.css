@@ -75,7 +75,7 @@ COMMON CONTAINER (DISCRIPTION)( 6 )( 5 )( footer )
 =====================================================
 */
 .container{
-	max-width: 900px;
+	width: min(900px,80%);
 	display: flex;
 	margin: auto;
 	flex-direction: column;
@@ -98,7 +98,7 @@ header a{
 	display: inline-block;
 }
 .container-header{
-	max-width: 900px;
+	width: min(900px, 80%);
 	margin: auto;
 }
 .main-header-contant{
@@ -122,6 +122,10 @@ nav{
 	justify-content: flex-start;
 	align-items: center;
 	flex: 1;
+}
+
+.Child2 > :nth-child(1) a{
+    font-size: 2rem;
 }
 
 nav > :nth-child(1) i{
@@ -511,7 +515,7 @@ FOURTH SECTION
 	justify-content: center;
 }
 .contant-main .contant{
-	width: 900px;
+	width: min(900px, 80%);
 }
 .contant-main .contant h1{
 	padding-bottom: 30px;

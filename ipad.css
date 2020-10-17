@@ -16,26 +16,37 @@ COMMON CONTAINER (DISCRIPTION)( 6 )( 5 )( footer )
 Header Section
 =============================
 */
+.main-header-contant{
+    height: 550px;
+}
+nav {
+    height: 150px;
+}
 nav > :nth-child(2) img{
     width: 68px;
 }
 .container-header{
-    max-width: 650px;
+	width: min(650px, 80%);
+	margin: auto;
+}
+.Child2{
+	width: 70%;
+    height: 300px;
 }
 
 .Child2 > :nth-child(1) a{
-    font-size: 2em;
+    font-size: 1.3rem;
+}
+
+.Child2 > :nth-child(1) a > img{
+    width: 1.4rem;
+}
+
+.Child2 > :nth-child(1) i {
+    font-size: 1.1rem;
 }
 .Child2 > :nth-child(2) ul li{
     margin: 11px 0px;
-}
-.main-header-contant{
-    height: 638px;
-}
-header{
-	width: 100%;
-	background: url(image/beach-clouds-dawn-1370725.jpg);
-	background-size: cover;
 }
 /*
 =============================
@@ -57,9 +68,6 @@ DESCRIPTION
 THIRD SECTION
 =============================
 */
-#Cards{
-   
-}
 .card {
     width: 33%;
     height: 240px;

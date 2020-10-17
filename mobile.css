@@ -34,8 +34,20 @@ display: flex;
 align-items: center;
 }
 
+.Child2 > :nth-child(1) a > img {
+    width: 1rem;
+}
+
+.Child2 > :nth-child(1) a{
+    font-size: .7rem;
+}
+
+.Child2 > :nth-child(1) i{
+    font-size: 10px;
+}
+
 nav > :nth-child(1) i{
-font-size: 18px;
+font-size: 10px;
 }
 
 nav > :nth-child(2) a img{
@@ -44,12 +56,7 @@ nav > :nth-child(2) a img{
 header a{
     font-size: 1.1em;
 }
-.Child2 > :nth-child(1) img{
-    width: 21px;
-}
-.Child2 > :nth-child(1) i{
-    font-size: 15px;
-}
+
 .Child2{
     height: 200px;
     margin-right: 20px;
