@@ -111,3 +111,13 @@ function closed(c){
   }
 }
 
+// header
+document.addEventListener("scroll", () => {
+  if (scrollY > 100) {
+    document.querySelector('.header__nav').classList.add("active-header");
+
+  }
+  else {
+    document.querySelector('.header__nav').classList.remove("active-header");
+  }
+})

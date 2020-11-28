@@ -8,6 +8,9 @@ GLOBAL STYLE
 	margin: 0;
 	box-sizing: border-box;
 }
+html, body{
+	scroll-behavior: smooth;
+}
 body{
 	font-family: 'Montserrat', sans-serif;
 	background: #fff;
@@ -75,125 +78,13 @@ COMMON CONTAINER (DISCRIPTION)( 6 )( 5 )( footer )
 =====================================================
 */
 .container{
-	width: min(900px,80%);
+	max-width: 900px;
 	display: flex;
 	margin: auto;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	justify-content: space-between;
-}
-/*
-==================
-Freelance
-==================
-*/
-
-.freelancing{
-	background-color: #f4f4f4;
-	margin: auto;
-	padding: 5px 0px;
-}
-.freelance-container{
-	display: flex;
-	max-width: 1100px;
-	/* border:1px solid black; */
-	margin: auto;
-	background-color: #fff;
-}
-.freelance{
-	width: 33.33%;
-	padding: 1px 0px;
-	border-right: 5px solid #f4f4f4;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.freelance-container > :last-child{
-	border:none;
-}
-.freelance *{
-	margin: 4px
-}
-.freelance p{
-    font-size: small;
-    font-weight: bold;
-}
-.freelance img{
-	width: 25px;
-}
-.freelance .imghover{
-	display: none;
-}
-.freelance:hover{
-	background-color: Black;
-	color: white;
-}
-.freelance:hover a.button{
-	color: white;
-	border:1px solid white;
-}
-.freelance:hover .imghover{
-	display: inline-block;
-}
-.freelance:hover .imgleave{
-	display: none;
-}
-.freelance a.button{
-	text-decoration: none;
-	color: black;
-	border:1px solid black;
-    padding: 4px 32px;
-    font-size: small;
-	border-radius: 5px;
-}
-.freelance a.img{
-	display: block;
-	width: 30px;
-}
-.freelance a.img img{
-	width: 100%;
-}
-
-#upwork a.button{ 
-   padding-right: 25px;
-   padding-left: 25px;
-   border-radius: 0px;
- }
- #github a.button{
- 	border-radius: 3px;
- }
- #github:hover a.button{
- 	border-color: green;
-
- 	font-weight: bold;
- 	  background: linear-gradient(to bottom, #85DC65, #5EB33E);
-
- }
- #github a.img,#upwork a.img {
-	 padding-right: 5px;
-	 width: 35px;
- }
- #upwork:hover a.button{
-     background-color: #31A200;
-     border:1px solid green;   
-     border-color: rgb(18, 171, 15);
- }
- #upwork a.img img{
-	 margin-top: 10px;
- }
-#upwork:hover{
-	background-color: rgb(0, 55, 82);
-}
-#fiverr:hover a.button{
-	background-color: #01AB2A;
-	border:1px solid green;
-}
-#fiverr:hover{
-	background-color: rgb(0, 26, 0);
-}
-#fiverr img{
-	width:21px;
 }
 /*
 =============================
@@ -205,30 +96,43 @@ header{
 	background: url(image/beach-clouds-dawn-1370725.jpg) no-repeat center / cover;
 
 }
+.active-header{
+	position: fixed;
+	top: 0;
+	background-color: hsla(249, 100%, 65%, .8);
+	border-bottom: .5rem solid #664AFF;
+	z-index: 1000;
+	margin-top: 0 !important;
+}
 header a{
 	text-decoration: none;
 	display: inline-block;
 }
 .container-header{
-	width: min(900px, 80%);
+	max-width: 900px;
 	margin: auto;
 }
 .main-header-contant{
-	height: 700px;
+	height: 600px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-nav{
+.header__nav{
 	width: 100%;
-	height: 180px;
+	margin-top: 1rem;
+}
+nav .nav-container{
+	margin: auto;
+	width: 100%;
+	height: 95px;
 	display: flex;
 	text-align: center;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.main-header-contant nav > :nth-child(1){
+.main-header-contant nav .hd-burger{
 	height: 50px;
 	display: flex;
 	justify-content: flex-start;
@@ -236,41 +140,37 @@ nav{
 	flex: 1;
 }
 
-.Child2 > :nth-child(1) a{
-    font-size: 2rem;
-}
-
-nav > :nth-child(1) i{
+nav .hd-burger i{
 	font-size: 1.5rem;
 	transition: 0.4s linear;
 }
-nav > :nth-child(1) i:hover{
+nav .hd-burger i:hover{
 	transform: scale(1.2);
 }
 
-nav > :nth-child(2) img{
-	width: 75px;
+nav .hd-logo img{
+	width: 55px;
 }
 
 
-.main-header-contant nav > :nth-child(2){
+.main-header-contant nav .hd-logo{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.main-header-contant nav > :nth-child(3){
+.main-header-contant nav .hd-searchbar{
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	flex: 1;
 }
 
-nav > :nth-child(3) i{
+nav .hd-searchbar i{
 	transition: all .5s linear;
 }
 
-nav > :nth-child(3) i:hover{
+nav .hd-searchbar i:hover{
 	transform: scale(1.2);
 }
 
@@ -398,9 +298,6 @@ nav > :nth-child(3) i:hover{
 }
 
 /* seacrhbar end */
-
-
-
 .Child2{
 	width: 70%;
 	height: 350px;
@@ -411,12 +308,13 @@ nav > :nth-child(3) i:hover{
 .Child2 > :nth-child(1){
 	display: flex;
 	align-items: flex-end;
+	font-size: 1.5rem;
 }
 .Child2 > :nth-child(1) i{
 	font-size: 30px;
 }
 .Child2 > :nth-child(1) img{
-	width: 35px;
+	width: 40px;
 }
 .Child2 > :nth-child(2){
 	align-self: flex-end;
@@ -627,7 +525,7 @@ FOURTH SECTION
 	justify-content: center;
 }
 .contant-main .contant{
-	width: min(900px, 80%);
+	width: 900px;
 }
 .contant-main .contant h1{
 	padding-bottom: 30px;

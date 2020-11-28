@@ -1,8 +1,5 @@
 @import url("./style.css");
 
-.freelance a.button{
-    display: none;
-}
 
 /*
 =====================================================
@@ -18,17 +15,22 @@ Header
 ==================
  */
 
+.header__nav{
+	margin-top: 0rem;
+}
+nav .nav-container{
+    height: 60px !important;
+}
 .container-header {
     max-width: 320px;
     margin: auto;
 }
 
 .main-header-contant{
-    height: 300px;
+    height: 280px;
 }
 
 nav{
-    height: 71px;
     padding: 0px 10px;
 }
 
@@ -36,33 +38,31 @@ nav a{
 display: flex;
 align-items: center;
 }
-
-.Child2 > :nth-child(1) a > img {
-    width: 1rem;
+.main-header-contant nav .hd-burger{
+    height: 30px;
+}
+nav .hd-burger i{
+font-size: 18px;
 }
 
-.Child2 > :nth-child(1) a{
-    font-size: .7rem;
-}
-
-.Child2 > :nth-child(1) i{
-    font-size: 10px;
-}
-
-nav > :nth-child(1) i{
-font-size: 10px;
-}
-
-nav > :nth-child(2) a img{
+nav .hd-logo a img{
     width: 32px;
 }
 header a{
     font-size: 1.1em;
 }
-
+.Child2 > :nth-child(1) img{
+    width: 21px;
+}
+.Child2 > :nth-child(1) i{
+    font-size: 15px;
+}
 .Child2{
-    height: 200px;
+    height: 180px;
     margin-right: 20px;
+}
+.Child2 > :nth-child(1) a{
+    font-size: .8rem !important;
 }
 .Child2 > :nth-child(2){
     margin-bottom: 10px;

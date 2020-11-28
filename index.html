@@ -13,59 +13,31 @@
 
 </head>
 <body>
-	<!-- Freelancing -->
-
-	<div class="freelancing">
-		<div class="freelance-container">
-			<div  id="github" class="freelance">
-				<a href="https://github.com/mrbasit" class="img" target="_blank">
-					<img class="imgleave" src="image/new.png">
-					<img class="imghover" src="image/newwhite.png">
-				</a>
-				<p> Github</p>
-				<a href="https://github.com/mrbasit" target="_blank" class="button"> Visit github</a>
-			</div>
-			<div id="upwork" class="freelance">
-				<a href="https://www.upwork.com/freelancers/~015224734dafe31cf8" class="img" target="_blank">
-					<img class="imgleave" src="image/upwork.png">
-					<img class="imghover" src="image/upwork.png">
-				</a>
-				<p> Upwork</p>
-				<a href="https://www.upwork.com/freelancers/~015224734dafe31cf8" class="button" target="_blank"> Start contract</a>
-			</div>
-			<div id="fiverr" class="freelance">
-				<a href="https://www.fiverr.com/techsol_030" class="img" target="_blank">
-					<img class="imgleave" src="image/fiver1.png">
-					<img class="imghover" src="image/fiver.png">
-				</a>
-				<p> Fiverr</p>
-				<a href="https://www.fiverr.com/techsol_030" class="button" target="_blank">Order now</a>
-			</div>
-		</div>
-	</div>
 	<!-- Header -->
 
-	<header>
+	<header id="sec1">
 		<div class="container-header">
 			<div class="main-header-contant">
-				<nav>
-					<div>
-						<a class="text-white-color" href="#" onclick="sideBarFunc()"><i class="fas fa-bars" ></i></a>
-					</div>
-					<div>
-						<a href="#"><img src="image/Artboard 1.png"></a>
-					</div>
-					<div>
-						<div class="search-box">
-							<input type="text" name="search" placeholder="looking for ?">
-							<div class="search-btn">
-								<i class="fas fa-search"></i>
-							</div>
-							<div class="cancel-btn">
-								<i class="fas fa-times"></i>
-							</div>
-							<div class="search-data">
-								
+				<nav class="header__nav">
+					<div class="container-header nav-container">
+						<div class="hd-burger">
+							<a class="text-white-color" href="#" onclick="sideBarFunc()"><i class="fas fa-bars" ></i></a>
+						</div>
+						<div class="hd-logo">
+							<a href="#"><img src="image/Artboard 1.png"></a>
+						</div>
+						<div class="hd-searchbar">
+							<div class="search-box">
+								<input type="text" name="search" placeholder="looking for ?">
+								<div class="search-btn">
+									<i class="fas fa-search"></i>
+								</div>
+								<div class="cancel-btn">
+									<i class="fas fa-times"></i>
+								</div>
+								<div class="search-data">
+									
+								</div>
 							</div>
 						</div>
 					</div>
@@ -96,12 +68,13 @@
 				</div>
 				<div class="main__sidebar">
 					<ul class="sidebar">
-						<li> <a href="#">Home</a></li>
-						<li> <a href="#">Blogs</a></li>
-						<li> <a href="#">About</a></li>
-						<li> <a href="#">Contact</a></li>
-						<li> <a href="#">Gallery</a></li>
-						<li> <a href="#">Services</a></li>
+						<li> <a href="#sec1">Home</a></li>
+						<li> <a href="#sec2">About</a></li>
+						<li> <a href="#sec3">Services</a></li>
+						<li> <a href="#sec4">Explore</a></li>
+						<li> <a href="#sec5">Subscribe</a></li>
+						<li> <a href="#sec6">Video</a></li>
+						<li> <a href="#sec7">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -110,198 +83,209 @@
 
 	<!-- Descriptoin -->
 
-	<section id="Desciption">
-		<div class="container">
-			<div class="contant text-blue-color">
-				<h1>We're changing the way you go to the doctor </h1>
-				<h4>We're changing the way you go to the doctor 
-				This is no ordinary doctor's office. Rather than do things the typical way, we've created a membership-based primary care practice truly designed around your needs. From same-day appointments that start on time to compassionate providers who listen to 24/7 video visits, we </h4>
+	<div id="sec2">
+		<section id="Desciption" >
+			<div class="container">
+				<div class="contant text-blue-color">
+					<h1>We're changing the way you go to the doctor </h1>
+					<h4>We're changing the way you go to the doctor 
+					This is no ordinary doctor's office. Rather than do things the typical way, we've created a membership-based primary care practice truly designed around your needs. From same-day appointments that start on time to compassionate providers who listen to 24/7 video visits, we </h4>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 
 	<!-- third section -->
 
-	<section id="main-3">
-		<div class="container3">
-			<div class="bg-img1"></div>
-			<div id="Cards">
-				<div class="card border-right">
-					<a href="#"><i class="fas fa-4x fa-crosshairs"></i></a>
-					<h2><a href="#" class="text-blue-color padding-top-bottom">#Hospital</a></h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim mollitia, perspiciatis eligendi atque quod impedit nulla non eum accusamus</p>
-				</div>
-				<div class="card border-right">
-					<a href="#"><i class="far fa-4x fa-lightbulb"></i></a>
-					<h2><a href="#" class="text-blue-color padding-top-bottom">BEST IN BEST</a></h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim mollitia, perspiciatis eligendi atque quod impedit nulla non eum accusamus</p>
-				</div>
-				<div class="card">
-					<a href="#"><i class="fas fa-4x fa-users"></i></a>
-					<h2><a href="#" class="text-blue-color padding-top-bottom">4000 PHYSICIAN</a></h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim mollitia, perspiciatis eligendi atque quod impedit nulla non eum accusamus</p>
+	<div id="sec3">
+		<section id="main-3">
+			<div class="container3">
+				<div class="bg-img1"></div>
+				<div id="Cards">
+					<div class="card border-right">
+						<a href="#"><i class="fas fa-4x fa-crosshairs"></i></a>
+						<h2><a href="#" class="text-blue-color padding-top-bottom">#Hospital</a></h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim mollitia, perspiciatis eligendi atque quod impedit nulla non eum accusamus</p>
+					</div>
+					<div class="card border-right">
+						<a href="#"><i class="far fa-4x fa-lightbulb"></i></a>
+						<h2><a href="#" class="text-blue-color padding-top-bottom">BEST IN BEST</a></h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim mollitia, perspiciatis eligendi atque quod impedit nulla non eum accusamus</p>
+					</div>
+					<div class="card">
+						<a href="#"><i class="fas fa-4x fa-users"></i></a>
+						<h2><a href="#" class="text-blue-color padding-top-bottom">4000 PHYSICIAN</a></h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim mollitia, perspiciatis eligendi atque quod impedit nulla non eum accusamus</p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 
 	<!-- fourth section -->
-	<section id="Slider">
-		<div class="main-4">
-			<div class="gradient">
-				<div class="container4">
-					<div class="contant-main">
-						<div class="contant text-white-color">
-						<h1 class="font-weight">FIND A DOCTOR</h1>
-						<h3 class="font-weight">This is no ordinary doctor's office. Rather than do things the typical way, we've created a membership-based primary care practice truly designed around your needs. From same-day</h3>
-						<a href="#"><h2  class="font-weight text-white-color">Find &nbsp;<i class="fas fa-greater-than"></i></h2></a>
+	<div id="sec4">
+		<section id="Slider">
+			<div class="main-4">
+				<div class="gradient">
+					<div class="container4">
+						<div class="contant-main">
+							<div class="contant text-white-color">
+							<h1 class="font-weight">FIND A DOCTOR</h1>
+							<h3 class="font-weight">This is no ordinary doctor's office. Rather than do things the typical way, we've created a membership-based primary care practice truly designed around your needs. From same-day</h3>
+							<a href="#"><h2  class="font-weight text-white-color">Find &nbsp;<i class="fas fa-greater-than"></i></h2></a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="main-4">
-			<div class="gradient">
-				<div class="container4">
-					<div class="contant-main">
-						<div class="contant text-white-color">
-						<h1 class="font-weight">Lorem, ipsum dolor.></h1>
-						<h3 class="font-weight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia vel eaque esse animi exercitationem tempore dicta veritatis? Sunt, voluptatibus temporibus.</h3>
-						<a href="#"><h2  class="font-weight text-white-color">Find &nbsp;<i class="fas fa-greater-than"></i></h2></a>
+			<div class="main-4">
+				<div class="gradient">
+					<div class="container4">
+						<div class="contant-main">
+							<div class="contant text-white-color">
+							<h1 class="font-weight">Lorem, ipsum dolor.></h1>
+							<h3 class="font-weight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia vel eaque esse animi exercitationem tempore dicta veritatis? Sunt, voluptatibus temporibus.</h3>
+							<a href="#"><h2  class="font-weight text-white-color">Find &nbsp;<i class="fas fa-greater-than"></i></h2></a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="main-4">
-			<div class="gradient">
-				<div class="container4">
-					<div class="contant-main">
-						<div class="contant text-white-color">
-						<h1 class="font-weight">Lorem, ipsum dolor.</h1>
-						<h3 class="font-weight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus iure, a veritatis ducimus tempore ipsam eos dolores quasi enim.</h3>
-						<a href="#"><h2  class="font-weight text-white-color">Find &nbsp;<i class="fas fa-greater-than"></i></h2></a>
+			<div class="main-4">
+				<div class="gradient">
+					<div class="container4">
+						<div class="contant-main">
+							<div class="contant text-white-color">
+							<h1 class="font-weight">Lorem, ipsum dolor.</h1>
+							<h3 class="font-weight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur necessitatibus iure, a veritatis ducimus tempore ipsam eos dolores quasi enim.</h3>
+							<a href="#"><h2  class="font-weight text-white-color">Find &nbsp;<i class="fas fa-greater-than"></i></h2></a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="Dots">
-			<div class="dot" onclick="ShowSlide(1)"></div>
-			<div class="dot" onclick="ShowSlide(2)"></div>
-			<div class="dot" onclick="ShowSlide(3)"></div>
-		</div>
-	</section>
+			<div id="Dots">
+				<div class="dot" onclick="ShowSlide(1)"></div>
+				<div class="dot" onclick="ShowSlide(2)"></div>
+				<div class="dot" onclick="ShowSlide(3)"></div>
+			</div>
+		</section>
+	</div>
 
 	<!-- fifth section -->
 
-	<section id="main-5">
-		<div class="container">
-			<div class="main-contant-5">
-				<div id="Card">
-					<div class="card1">
-						<img src="image/philipp-kammerer-6Mxb_mZ_Q8E-unsplash.jpg">
-						<img src="image/matt-le-SJSpo9hQf7s-unsplash.jpg">
-						<img src="image/beach-clouds-dawn-1370725.jpg">
+	<div id="sec5">
+		<section id="main-5 sec5">
+			<div class="container">
+				<div class="main-contant-5">
+					<div id="Card">
+						<div class="card1">
+							<img src="image/philipp-kammerer-6Mxb_mZ_Q8E-unsplash.jpg">
+							<img src="image/matt-le-SJSpo9hQf7s-unsplash.jpg">
+							<img src="image/beach-clouds-dawn-1370725.jpg">
+						</div>
+						<div class="card2 text-blue-color line-height">
+							<h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
+						</div>
 					</div>
-					<div class="card2 text-blue-color line-height">
-						<h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
-					</div>
-				</div>
-				<div class="row">
-					<div>
-						<input type="email" placeholder="EMAIL" name="" class="line-height lettter-spacing ">
-						<a href="#" class="border-radius text-white-color lettter-spacing"><h4 class="font-weight">SUBSCRIBE</h4></a>
+					<div class="row">
+						<div>
+							<input type="email" placeholder="EMAIL" name="" class="line-height lettter-spacing ">
+							<a href="#" class="border-radius text-white-color lettter-spacing"><h4 class="font-weight">SUBSCRIBE</h4></a>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
+
 
 	<!-- Videos section -->
 
-	<section id="Videos-Section">
-		<div class="container">
-			<div class="First-video">
-				<div class="contant">
-					<div>
-						<a onclick="trailer(1)" class="text-white-color action" href="#"><i class="fas fa-2x fa-play"></i></a>
-					</div>
-					<div class="latter-spacing font-size">
+	<div id="sec6">
+		<section id="Videos-Section">
+			<div class="container">
+				<div class="First-video">
+					<div class="contant">
 						<div>
-							<a href="#" class="text-white-color"><h2>WHO ARE WE</h2></a>
+							<a onclick="trailer(1)" class="text-white-color action" href="#"><i class="fas fa-2x fa-play"></i></a>
 						</div>
+						<div class="latter-spacing font-size">
+							<div>
+								<a href="#" class="text-white-color"><h2>WHO ARE WE</h2></a>
+							</div>
+							<div>
+								<ul class="border-radius">
+									<li>
+										<a class="text-blue-color" href="#"><i class="fab fa-facebook"></i></a>
+									</li>
+									<li>
+										<a class="text-blue-color" href="#"><i class="fab fa-pinterest-p"></i></a>
+									</li>
+									<li>
+										<a class="text-blue-color" href="#"><i class="fab fa-whatsapp"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="Second-Third-video">
+					<div class="card1">
 						<div>
-							<ul class="border-radius">
-								<li>
-									<a class="text-blue-color" href="#"><i class="fab fa-facebook"></i></a>
-								</li>
-								<li>
-									<a class="text-blue-color" href="#"><i class="fab fa-pinterest-p"></i></a>
-								</li>
-								<li>
-									<a class="text-blue-color" href="#"><i class="fab fa-whatsapp"></i></a>
-								</li>
-							</ul>
+							<a onclick="trailer(2)" class="text-white-color" href="#"><i class="fas fa-play"></i></a>
+						</div>
+						<div class="text-blue-color">
+						<a href="#"><h1 class="padding-top-bottom text-blue-color font-size latter-spacing line-height">Personal Membership</h1></a>
+						<p class="text-align-justify">This no ordinay doctor's office.Rather than do things the typical way.we've created a membership-based primay care</p>
+						</div>
+					</div>
+					<div class="card2">
+						<div>
+							<a onclick="trailer(3)" class="text-white-color" href="#"><i class="fas fa-play"></i></a>
+						</div>
+						<div class="text-blue-color">
+						<a href="#"><h1 class="padding-top-bottom text-blue-color font-size line-height latter-spacing">For Employees</h1></a>
+						<p class="text-align-justify">This is no ordinay doctor's office.Raather than do things the typical way,we've created a membership-based.</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="Second-Third-video">
-				<div class="card1">
-					<div>
-						<a onclick="trailer(2)" class="text-white-color" href="#"><i class="fas fa-play"></i></a>
-					</div>
-					<div class="text-blue-color">
-					<a href="#"><h1 class="padding-top-bottom text-blue-color font-size latter-spacing line-height">Personal Membership</h1></a>
-					<p class="text-align-justify">This no ordinay doctor's office.Rather than do things the typical way.we've created a membership-based primay care</p>
-					</div>
+			<!-- 1st video trailer -->
+			<div class="trailer1">
+				<div class="iframe-container">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/BNVHwDk-8m0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
 				</div>
-				<div class="card2">
-					<div>
-						<a onclick="trailer(3)" class="text-white-color" href="#"><i class="fas fa-play"></i></a>
-					</div>
-					<div class="text-blue-color">
-					<a href="#"><h1 class="padding-top-bottom text-blue-color font-size line-height latter-spacing">For Employees</h1></a>
-					<p class="text-align-justify">This is no ordinay doctor's office.Raather than do things the typical way,we've created a membership-based.</p>
-					</div>
+				<a onclick="closed(1)" class="close" href="#">
+					<i class="fas fa-times"></i>
+				</a>
+			</div>
+			<!-- 2st video trailer -->
+			<div class="trailer2">
+				<div class="iframe-container">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/BNVHwDk-8m0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
 				</div>
+				<a onclick="closed(2)" class="close" href="#">
+					<i class="fas fa-times"></i>
+				</a>
 			</div>
-		</div>
-		<!-- 1st video trailer -->
-		<div class="trailer1">
-			<div class="iframe-container">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/BNVHwDk-8m0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+			<!-- 3st video trailer -->
+			<div class="trailer3">
+				<div class="iframe-container">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/BNVHwDk-8m0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+				</div>
+				<a onclick="closed(3)"  class="close" href="#">
+					<i class="fas fa-times"></i>
+				</a>
 			</div>
-			<a onclick="closed(1)" class="close" href="#">
-				<i class="fas fa-times"></i>
-			</a>
-		</div>
-		<!-- 2st video trailer -->
-		<div class="trailer2">
-			<div class="iframe-container">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/BNVHwDk-8m0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-			</div>
-			<a onclick="closed(2)" class="close" href="#">
-				<i class="fas fa-times"></i>
-			</a>
-		</div>
-		<!-- 3st video trailer -->
-		<div class="trailer3">
-			<div class="iframe-container">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/BNVHwDk-8m0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-			</div>
-			<a onclick="closed(3)"  class="close" href="#">
-				<i class="fas fa-times"></i>
-			</a>
-		</div>
-
-
-	</section>
+	
+	
+		</section>
+	</div>
 
 	<!-- footer section -->
 
-	<footer>
+	<footer id="sec7">
 		<div class="container">
 			<div class="row1 text-white-color">
 				<h1 class="font-size5">Get Your</h1>
