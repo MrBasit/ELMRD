@@ -305,6 +305,9 @@ nav .hd-searchbar i:hover{
 	align-self: flex-end;
 	justify-content: space-between;
 }
+.Child2 div a{
+  cursor: not-allowed;
+}
 .Child2 > :nth-child(1){
 	display: flex;
 	align-items: flex-end;
@@ -465,6 +468,9 @@ THIRD SECTION
 	flex-wrap: wrap;
 	
 }
+#Cards a{
+  cursor: not-allowed;
+}
 .card{
 	width: 33%;
 	/* height: 240px; */
@@ -532,6 +538,9 @@ FOURTH SECTION
 }
 .contant-main .contant h2{
 	margin-top: 30px;
+}
+.main-4 a{
+  cursor: not-allowed;
 }
 .contant-main .contant a h2 i{
 	font-size: 20px;
@@ -679,6 +688,9 @@ Videos SECTION
 	padding: 44px 76px;
 	justify-content: center;
 }
+.First-video a{
+  cursor: not-allowed;
+}
 .First-video .contant{
 	height: 180px;
 	width: 480px;
@@ -774,6 +786,12 @@ Videos SECTION
 .Second-Third-video .card2 > :nth-child(1) a{
 	padding: 10px 30px 10px 30px;
 	background: var(--bg-play-icon);
+}
+.card1 a{
+  cursor: not-allowed;
+}
+.card2 a{
+  cursor: not-allowed;
 }
 
 /* Trailer */
@@ -938,6 +956,9 @@ footer{
 	justify-content: space-between;
 	align-self: center;
 }
+.row3 .nav a{
+  cursor: not-allowed;
+}
 .row3 .nav ul{
 	display: flex;
 	list-style: none;
@@ -955,6 +976,9 @@ footer{
 }
 .row3 .icons ul li a{
 	padding: 8px 4px;
+}
+.row3 .icons a{
+  cursor: not-allowed;
 }
 .row3 .icons ul li a i{
 	font-size: 18px;
