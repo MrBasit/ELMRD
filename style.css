@@ -600,6 +600,14 @@ FIFTH SECTION
 	display: inline-block;
 	width: 390px;
 	height: 240px;
+	transition: .3s ease;
+}
+#Card .card1 img:hover{
+	z-index:4;
+	opacity: 1 !important;
+}
+#Card .card1:hover img{
+	opacity: 0.8;
 }
 
 #Card .card1 > :nth-child(1){
