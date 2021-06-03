@@ -113,7 +113,7 @@ function closed(c){
 
 // header
 document.addEventListener("scroll", () => {
-  if (scrollY > 100) {
+  if (scrollY > 200) {
     document.querySelector('.header__nav').classList.add("active-header");
 
   }

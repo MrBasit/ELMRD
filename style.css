@@ -99,10 +99,17 @@ header{
 .active-header{
 	position: fixed;
 	top: 0;
-	background-color: hsla(249, 100%, 65%, .8);
-	border-bottom: .5rem solid #664AFF;
+	background-color: rgba(77, 140, 183,0.6);
+	border-bottom: .1rem solid #ab9dfc;
 	z-index: 1000;
 	margin-top: 0 !important;
+	-webkit-box-shadow: 0px 1px 10px hsla(249, 100%, 65%, .8);
+    -moz-box-shadow: 0px 1px 10px hsla(249, 100%, 65%, .8);
+    box-shadow: 0px 1px 10px hsla(249, 100%, 65%, .8);
+}
+.active-header .nav-container{
+	height: 85px !important;
+	transition: height .5s ease;
 }
 header a{
 	text-decoration: none;
@@ -130,6 +137,7 @@ nav .nav-container{
 	text-align: center;
 	justify-content: space-between;
 	align-items: center;
+	transition: height .3s ease;
 }
 
 .main-header-contant nav .hd-burger{
@@ -305,8 +313,16 @@ nav .hd-searchbar i:hover{
 	align-self: flex-end;
 	justify-content: space-between;
 }
-.Child2 div a{
-  cursor: not-allowed;
+.Child2 .find_link a{
+  display: flex;
+  align-items: center;
+  
+}
+.Child2 .find_link a i {
+	transition: transform .2s;
+}
+.Child2 .find_link a:hover i {
+	transform: translateX(.5rem);
 }
 .Child2 > :nth-child(1){
 	display: flex;
@@ -468,9 +484,6 @@ THIRD SECTION
 	flex-wrap: wrap;
 	
 }
-#Cards a{
-  cursor: not-allowed;
-}
 .card{
 	width: 33%;
 	/* height: 240px; */
@@ -538,12 +551,12 @@ FOURTH SECTION
 }
 .contant-main .contant h2{
 	margin-top: 30px;
-}
-.main-4 a{
-  cursor: not-allowed;
+	display: flex;
+	align-items: center;
 }
 .contant-main .contant a h2 i{
 	font-size: 20px;
+	pointer-events: none;
 }
 #Dots{
 	position: absolute;
@@ -696,9 +709,6 @@ Videos SECTION
 	padding: 44px 76px;
 	justify-content: center;
 }
-.First-video a{
-  cursor: not-allowed;
-}
 .First-video .contant{
 	height: 180px;
 	width: 480px;
@@ -794,12 +804,6 @@ Videos SECTION
 .Second-Third-video .card2 > :nth-child(1) a{
 	padding: 10px 30px 10px 30px;
 	background: var(--bg-play-icon);
-}
-.card1 a{
-  cursor: not-allowed;
-}
-.card2 a{
-  cursor: not-allowed;
 }
 
 /* Trailer */
@@ -964,9 +968,6 @@ footer{
 	justify-content: space-between;
 	align-self: center;
 }
-.row3 .nav a{
-  cursor: not-allowed;
-}
 .row3 .nav ul{
 	display: flex;
 	list-style: none;
@@ -984,9 +985,6 @@ footer{
 }
 .row3 .icons ul li a{
 	padding: 8px 4px;
-}
-.row3 .icons a{
-  cursor: not-allowed;
 }
 .row3 .icons ul li a i{
 	font-size: 18px;
