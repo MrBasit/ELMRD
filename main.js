@@ -170,10 +170,20 @@ document.addEventListener("scroll", () => {
     }
   }
 })
+//login pop up
+var modal_login = document.getElementById("login1");
+
+// Get the button that opens the modal_login
+var btn_login = document.getElementById("popup2");
+
+// When the user clicks on the button, open the modal_login
+btn_login.onclick = function() {
+  modal_login.style.display = "flex";
+}
 
 //signup pop up
 // Get the modal
-var modal = document.getElementById("sec8");
+var modal = document.getElementById("signup1");
 
 // Get the button that opens the modal
 var btn = document.getElementById("popup1");
@@ -188,21 +198,10 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-  if (event.target == modal1) {
-    modal1.style.display = "none";
+  if (event.target == modal_login) {
+    modal_login.style.display = "none";
   }
 }
 
 
-//signup pop up
-// Get the modal
-var modal1 = document.getElementById("sec8");
 
-// Get the button that opens the modal
-var btn1 = document.getElementById("popup2");
-
-
-// When the user clicks on the button, open the modal
-btn1.onclick = function() {
-  modal1.style.display = "flex";
-}
