@@ -1,19 +1,54 @@
-slideNumber=1;
-ShowSlide(slideNumber);
 
-function ShowSlide(n){
- let slides = document.getElementsByClassName("main-4");
- let dots = document.getElementsByClassName("dot");
+// sec 4
+//slider  static
 
- for(i=0;i<slides.length;i++){
-   slides[i].style.display="none";
- }
- for(i=0;i<dots.length;i++){
-   dots[i].className="dot";
- }
- slides[n-1].style.display="block";
- dots[n-1].className="dot active";
+window.addEventListener("load", function () {
+  showSlides(slideIndex);
+  myTimer = setInterval(function () { plusSlides(1) }, 3000);
+})
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("main-4");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace("active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
+// slider automatic 
+function plusSlides(n) {
+  clearInterval(myTimer);
+  if (n < 0) {
+    showSlides(slideIndex -= 1);
+  } else {
+    showSlides(slideIndex += 1);
+  }
+  if (n === -1) {
+    myTimer = setInterval(function () { plusSlides(n + 2) }, 3000);
+  } else {
+    myTimer = setInterval(function () { plusSlides(n + 1) }, 3000);
+  }
+}
+function currentSlide(n) {
+  clearInterval(myTimer);
+  myTimer = setInterval(function () { plusSlides(n + 1) }, 3000);
+  showSlides(slideIndex = n);
+}
+
 
 // ---- sidebar start ----
 // sidebar
@@ -135,3 +170,39 @@ document.addEventListener("scroll", () => {
     }
   }
 })
+
+//signup pop up
+// Get the modal
+var modal = document.getElementById("sec8");
+
+// Get the button that opens the modal
+var btn = document.getElementById("popup1");
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "flex";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+
+
+//signup pop up
+// Get the modal
+var modal1 = document.getElementById("sec8");
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("popup2");
+
+
+// When the user clicks on the button, open the modal
+btn1.onclick = function() {
+  modal1.style.display = "flex";
+}

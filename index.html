@@ -224,9 +224,9 @@
 				</div>
 			</div>
 			<div id="Dots">
-				<div class="dot" onclick="ShowSlide(1)"></div>
-				<div class="dot" onclick="ShowSlide(2)"></div>
-				<div class="dot" onclick="ShowSlide(3)"></div>
+				<div class="dot" onclick="currentSlide(1)"></div>
+				<div class="dot" onclick="currentSlide(2)"></div>
+				<div class="dot" onclick="currentSlide(3)"></div>
 			</div>
 		</section>
 	</div>
@@ -364,8 +364,8 @@
 				<h1 class="font-size5">Get Your</h1>
 				<h1 class="font-size5 padding">Medical Treatment</h1>
 				<ul>
-					<li><a href="#" class="border-radius text-blue-color">SIGN UP</a></li>
-					<li><a href="#" class="border-radius text-blue-color">LOG IN</a></li>
+					<li><a href="#" class="border-radius text-blue-color" id="popup1">SIGN UP</a></li>
+					<li><a href="#" class="border-radius text-blue-color" id="popup2">LOG IN</a></li>
 				</ul>
 			</div>
 			<div class="row2 text-white-color">
@@ -407,7 +407,7 @@
 
 
 	<!-- signup -->
-<!-- 
+
 	<section id="sec8">
 		<form class="sign_Up">
 			<div class="sign sign-h3">
@@ -419,7 +419,7 @@
 			</div>
 			<div class="sign pass">
 				<input type="mail" name="Password" required>
-				<label>Your Password</label>
+				<label>Password</label>
 			</div>
 			<div class="sign f-p">
 				<label>Forgot Password?</label>
@@ -442,7 +442,7 @@
 				</div>
 			</div>
 		</form>
-	</section> -->
+	</section>
 	<!-- login -->
 	
 	<section id="sec8">
