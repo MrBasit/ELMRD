@@ -168,6 +168,7 @@ nav .nav-container{
 	justify-content: flex-start;
 	align-items: center;
 	flex: 1;
+	cursor: pointer;
 }
 
 nav .hd-burger i{
@@ -775,6 +776,7 @@ FIFTH SECTION
 	transition: 0.4s;
 	width: 163px;
 	font-size: 15px;
+	cursor: pointer;
 }
 .row a:hover{
 	background: #fff;
@@ -1025,6 +1027,7 @@ footer{
 	transition: 0.3s linear;
 	border: 1px solid #1369A2;
 	color: #1369A2;
+	cursor: pointer;
 }
 .row1 ul li a:hover{
 	background: #1369A2;
