@@ -50,8 +50,14 @@ const cancelBtn = document.querySelector('.cancel-btn');
 const searchBox = document.querySelector('.search-box');
 const searchInput = document.querySelector('input');
 const searchdata = document.querySelector('.search-data');
+const headerContainer = document.querySelector('.container-header');
+const searchMainOverlay = document.querySelector('.search_item_main');
+const header = document.querySelector('.header__nav');
 
 searchBtn.onclick = () => {
+  header.classList.add("active-header");
+  headerContainer.classList.add('search_open');
+  searchMainOverlay.classList.add('search_open');
   searchBox.classList.add('active');
   searchInput.classList.add('active');
   searchBtn.classList.add('active');
@@ -59,13 +65,18 @@ searchBtn.onclick = () => {
   if(searchInput.value != ""){
     let values = searchInput.value;
   searchdata.classList.remove('active');
-    searchdata.innerHTML= "You Just Typed : " + "<span style='font-weight: 600; letter-spacing: 1px;'>" + values +"</span>";
+    searchdata.innerHTML= "You Just Typed : " + "<span style='word-break: break-word; font-weight: 600; letter-spacing: 1px;'>" + values +"</span>";
   }else{
     searchdata.innerHTML = ""
   }
 }
 
 cancelBtn.onclick = () => {
+  if(scrollY < 200){
+    header.classList.remove("active-header");
+  }
+  searchMainOverlay.classList.remove('search_open');
+  headerContainer.classList.remove('search_open');
   searchBox.classList.remove('active');
   searchInput.classList.remove('active');
   searchBtn.classList.remove('active');
@@ -118,7 +129,10 @@ document.addEventListener("scroll", () => {
 
   }
   else {
-    document.querySelector('.header__nav').classList.remove("active-header");
+    if(!headerContainer.classList.contains('search_open')){
+
+      document.querySelector('.header__nav').classList.remove("active-header");
+    }
   }
 })
 
