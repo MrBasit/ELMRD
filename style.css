@@ -15,6 +15,24 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	background: #fff;
 }
+  
+/* Track */
+body::-webkit-scrollbar-track {
+    box-shadow: 0 0 .6rem rgba(255, 255, 255, 1); 
+    border-radius: 2rem;
+    background: #e9e7e7;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: rgba(242, 126, 99, 0.5);
+    border-radius: 2rem;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: rgba(242, 126, 99, 1); 
+}
 /*
 =============================
 COMMON STYLING
@@ -36,7 +54,7 @@ a{
 .text-white-color{
 	color: #fff;
 }
-.text-blue-color{
+li.text-blue-color{
 	color: #1369A2;
 }
 .font-weight{
@@ -99,10 +117,17 @@ header{
 .active-header{
 	position: fixed;
 	top: 0;
-	background-color: hsla(249, 100%, 65%, .8);
-	border-bottom: .5rem solid #664AFF;
+	background-color: rgba(77, 140, 183,0.6);
+	border-bottom: .1rem solid #ab9dfc;
 	z-index: 1000;
 	margin-top: 0 !important;
+	-webkit-box-shadow: 0px 1px 10px hsla(249, 100%, 65%, .8);
+    -moz-box-shadow: 0px 1px 10px hsla(249, 100%, 65%, .8);
+    box-shadow: 0px 1px 10px hsla(249, 100%, 65%, .8);
+}
+.active-header .nav-container{
+	height: 85px !important;
+	transition: height .5s ease;
 }
 header a{
 	text-decoration: none;
@@ -111,6 +136,10 @@ header a{
 .container-header{
 	max-width: 900px;
 	margin: auto;
+}
+.container-header.search_open .hd-burger,
+.container-header.search_open .hd-logo{
+	display: none;
 }
 .main-header-contant{
 	height: 600px;
@@ -130,6 +159,7 @@ nav .nav-container{
 	text-align: center;
 	justify-content: space-between;
 	align-items: center;
+	transition: height .3s ease;
 }
 
 .main-header-contant nav .hd-burger{
@@ -196,7 +226,7 @@ nav .hd-searchbar i:hover{
 	}
 	
 	.search-box.active{
-		width: 8rem !important;
+		/* width: 8rem !important; */
 	}
 	.search-box .search-btn{
 		height: 25px !important;
@@ -223,8 +253,12 @@ nav .hd-searchbar i:hover{
 	}
 }
 
+.search-box{
+	z-index: 1000;
+}
+
 .search-box.active{
-	width: 15rem;
+	width: 100%;
 }
 .search-box input{
 	height: 100%;
@@ -235,8 +269,12 @@ nav .hd-searchbar i:hover{
 	color: #1369A2;
 	font-size: 1rem;
 	border-radius: 50px;
-	padding: 1em .7em 1em .9em;
+	padding: 1em 3.2em 1em 1.5em;
 	opacity: 0;
+	letter-spacing: .1em;
+}
+.search-box input:focus{
+	color: black;
 }
 .search-box input.active{
 	opacity: 1;
@@ -287,7 +325,7 @@ nav .hd-searchbar i:hover{
 
 .search-box .search-data{
 	text-align: center;
-	padding-top: 7px;
+	padding-top: 2em;
 	color: #fff;
 	font-size: .9rem;
 	word-wrap: break-word;
@@ -296,7 +334,62 @@ nav .hd-searchbar i:hover{
 .search-box .search-data.active{
 	display: none;
 }
-
+/* search items */
+.search_item_main{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(77, 140, 183,0.95);
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0s ease;
+}
+.search_item_main.search_open{
+	visibility: visible;
+	opacity: 1;
+	pointer-events: all;
+	z-index: 999;
+	transition: .3s ease;
+}
+.search_list{
+	display: flex;
+	flex-direction: column;
+}
+.search_list{
+	margin-top: 130px;
+	max-height: 78vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.search_list .search_item{
+	padding-top: .9em;
+	opacity: 0;
+	transform: translateY(5rem);
+	transition: transform .2s, opacity .3s;
+	transition-delay: calc(.05s * var(--i));
+}
+.search_list .search_item + .search_item{
+	margin-top: 1em;
+	border-top: 1px solid #1369A2;
+}
+.search_list .search_item h2{
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin-bottom: .8rem;
+}
+.search_list .search_item p{
+	font-size: 1rem;
+	font-weight: 400;
+	margin-bottom: .3rem;
+	line-height: 1.3;
+}
+.search_item_main.search_open .search_item{
+	transform: translateY(0rem);
+	opacity: 1;
+}
 /* seacrhbar end */
 .Child2{
 	width: 70%;
@@ -304,6 +397,18 @@ nav .hd-searchbar i:hover{
 	display: flex;
 	align-self: flex-end;
 	justify-content: space-between;
+}
+
+.Child2 .find_link a{
+  display: flex;
+  align-items: center;
+  
+}
+.Child2 .find_link a i {
+	transition: transform .2s;
+}
+.Child2 .find_link a:hover i {
+	transform: translateX(.5rem);
 }
 .Child2 > :nth-child(1){
 	display: flex;
@@ -458,8 +563,7 @@ THIRD SECTION
 	clip-path: polygon(0% 0%, 0% 100%, 100% 80%, 100% 0%);
 }
 #Cards{
-	/* width: 900px; */
-	/* height: 350px; */
+	max-width: 1400px;
 	margin: 50px auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -532,13 +636,15 @@ FOURTH SECTION
 }
 .contant-main .contant h2{
 	margin-top: 30px;
+	display: flex;
+	align-items: center;
 }
 .contant-main .contant a h2 i{
 	font-size: 20px;
+	pointer-events: none;
 }
 #Dots{
 	position: absolute;
-	/* left: 50%; */
 	bottom: 5%;
 	display: flex;
 	width: 100%;
@@ -548,13 +654,15 @@ FOURTH SECTION
 	width: 20px;
 	height: 20px;	
 	border-radius: 50%;
-	background-color: #fff;
+	background-color: #c5bfec;
 	margin: 10px;
 	cursor: pointer;
-	border: 2px solid #aaa;
+	border: 2px solid #c5bfec;
+	transition: .4s ease;
 }
 .dot.active{
-	border: 3px solid #333;
+	border: 2px solid #fff;
+	background-color: transparent;
 }
 
 /*
@@ -591,6 +699,14 @@ FIFTH SECTION
 	display: inline-block;
 	width: 390px;
 	height: 240px;
+	transition: .3s ease;
+}
+#Card .card1 img:hover{
+	z-index:4;
+	opacity: 1 !important;
+}
+#Card .card1:hover img{
+	opacity: 0.8;
 }
 
 #Card .card1 > :nth-child(1){
@@ -968,3 +1084,172 @@ footer{
 	padding: 80px 50px 50px 50px;
 	display: flex;
 }
+/* signup */
+#sec8{
+	display: flex;
+	flex-direction: column;
+	background-color: #1369A2;
+  background-image:linear-gradient(-25deg, rgba(255, 255, 255, 1) 0 50%, rgba(19, 105, 162,1) 50% 100%);
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	z-index: 99999;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+#sec8 .login{
+	height: 500px !important;
+}
+#sec8 .sign_Up{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	width: 400px;
+	height: 400px;
+	-webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 10px black;
+	border-radius: 5px;
+}
+#sec8 .sign_Up .sign-h3{
+	width: 100% !important;
+	font-size: 25px;
+}
+#sec8 .sign_Up .sign-h3 h3{
+  padding: 0px 0 10px 0 ;
+	font-size: 25px;
+}
+#sec8 .sign_Up .sign{
+	height: 50px;
+	border-bottom: 1px solid rgb(212, 212, 212);
+	width: 80%;
+	text-align: center;
+	position: relative;
+}
+#sec8 .sign_Up .sign input{
+	border: 0;
+	outline: none;
+	width: 100%;
+	font-size: 18px;
+	padding: 20px 0 0px 0;
+	height: 48px;
+}
+
+#sec8 .sign_Up .mail label,
+#sec8 .sign_Up .pass label{
+	position: absolute;
+	left: 0;
+	top:25px;
+}
+#sec8 .sign_Up input:focus + label{
+  top: 5px;
+	left: -2px;
+	transition: all .4s ease;
+}
+#sec8 .sign_Up input:not(:focus):valid + label {
+	top: 5px;
+	left: -2px;
+}
+#sec8 .sign_Up .sign label{
+ font-size: 12px;
+}
+#sec8 .sign_Up .f-p,#sec8 .sign_Up .s-b,
+#sec8 .sign_Up .s-i-w,#sec8 .sign_Up  .s-icons
+{
+	border-bottom:none;
+}
+#sec8 .sign_Up .f-p{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+#sec8 .sign_Up .f-p label{
+	font-size: 10px;
+	color: #1369A2;
+	cursor: pointer;
+}
+#sec8 .sign_Up .s-i-w{
+	display: flex;
+	justify-content: center;
+}
+#sec8 .sign_Up .signUp_btn{
+	padding: 10px 50px;
+	background: #fff;
+	transition: 0.3s linear;
+	border-radius: 20px;
+	border: 1px solid #1369A2;
+	color: #1369A2;
+	width: 100%;
+	display: inline-block;
+}
+#sec8 .sign_Up .signUp_btn:hover{
+ background: #1369A2;
+ border: 1px solid #fff;
+ color: #fff !important;
+ transform: scale(1.1);
+}
+#sec8 .sign_Up button{
+	border: none;
+	background-color:transparent;
+	width: 100%;
+}
+#sec8 .sign_Up .s-i-w label{
+	margin: 0 auto;
+}
+#sec8 .sign_Up .s-icons{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#sec8 .sign_Up .s-icons .facebook,
+#sec8 .sign_Up .s-icons .twitter,
+#sec8 .sign_Up .s-icons .google
+{
+	border-radius: 25px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+#sec8 .sign_Up .s-icons .facebook i,
+#sec8 .sign_Up .s-icons .twitter i,
+#sec8 .sign_Up .s-icons .google i
+{
+	font-size: 20px;
+	margin: 9px 0;
+}
+#sec8 .sign_Up .s-icons .facebook{
+	background-color: #fff;
+	border: 1px solid #1369A2;
+	color: #1369A2;
+}
+#sec8 .sign_Up .s-icons .facebook:hover{
+	background-color: #1369A2;
+	color: #fff;
+	transition: all 0.4s;
+}
+#sec8 .sign_Up .s-icons .twitter{
+	background-color: #fff;
+	border: 1px solid #9400D3;
+	color: #9400D3;
+	margin: 0 20px;
+}
+#sec8 .sign_Up .s-icons .twitter:hover{
+	background-color: #9400D3;
+	color: #fff;
+	transition: all 0.4s;
+}
+#sec8 .sign_Up .s-icons .google{
+	background-color: #fff;
+	border: 1px solid #a81c46;
+	color: #a81c46;
+}
+#sec8 .sign_Up .s-icons .google:hover{
+	background-color: #a81c46;
+	color: #fff;
+	transition: all 0.4s;
+}
+
