@@ -203,5 +203,37 @@ window.onclick = function(event) {
   }
 }
 
+// const mail=document.getElementById("mail");
+// const subscribe=document.getElementById("subscribe")
+// subscribe.addEventListener("click",function(){
+//   mail.te
+// });
+function fun(){
+  if(document.getElementById('mail').value!==''){
+  document.getElementById('mail').value='';
+  document.getElementById("small-e1").style.display="none";
+  document.getElementById("small").style.display="block";
+ }
+ else{
+  document.getElementById("small").style.display="none";
+  document.getElementById("small-e1").style.display="block";
+ }
+}
+
+function login_input(){
+    document.getElementById('mail2').value='';
+    document.getElementById('pass').value='';
+ 
+}
+function login_signup(){
+  document.getElementById('mail3').value='';
+  document.getElementById('pass2').value='';
+  document.getElementById('pass3').value='';
+  document.getElementById('name').value='';
+
+}
+
+  
+
 
 

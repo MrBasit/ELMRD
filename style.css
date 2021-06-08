@@ -401,6 +401,7 @@ nav .hd-searchbar i:hover{
 }
 
 .Child2 .find_link a{
+	cursor:not-allowed;
   display: flex;
   align-items: center;
   
@@ -435,6 +436,7 @@ nav .hd-searchbar i:hover{
 	margin: 15px 0px 15px 0px;
 }
 .Child2 > :nth-child(2) ul li a i{
+	cursor:not-allowed;
 	font-size: 23px;
 	transition: 0.2s linear;
 }
@@ -579,6 +581,7 @@ THIRD SECTION
 	justify-content: center;
 	align-items: center;
 	padding-left: 2px;
+	cursor: not-allowed;
 }
 #Cards .card i{
 	transition: 0.2s linear;
@@ -624,7 +627,7 @@ FOURTH SECTION
 .contant-main{
 	width: 100%;
 	height: 230px;
-	background: #1369A2;
+	background: transparent;
 	align-items: center;
 	display: flex;
 	justify-content: center;
@@ -636,6 +639,7 @@ FOURTH SECTION
 	padding-bottom: 30px;
 }
 .contant-main .contant h2{
+	cursor:not-allowed;
 	margin-top: 30px;
 	display: flex;
 	align-items: center;
@@ -778,6 +782,24 @@ FIFTH SECTION
 	font-size: 15px;
 	cursor: pointer;
 }
+.small{
+	display: none;
+	color: green;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+.small-error{
+	display: none;
+	color: red;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.row button{
+	background: transparent;
+	outline: none;
+	border: none;
+}
 .row a:hover{
 	background: #fff;
 	color: #1369A2;
@@ -810,6 +832,7 @@ Videos SECTION
 }
 .First-video .contant > :nth-child(1){
 	align-self: center;
+	cursor:not-allowed;
 }
 .First-video .contant > :nth-child(1) a{
 	padding: 15px 55px 15px 55px;
@@ -847,6 +870,7 @@ Videos SECTION
 .First-video .contant > :nth-child(2) > :nth-child(2) i{
 	transition: 0.5s linear;
 	font-size: 20px;
+	cursor: not-allowed;
 }
 .First-video .contant > :nth-child(2) > :nth-child(2) i:hover{
 	transform: scale(1.2);
@@ -878,6 +902,7 @@ Videos SECTION
 	align-items: center;
 }
 .Second-Third-video .card1 > :nth-child(1) a{
+	cursor:not-allowed;
 	padding: 10px 30px 10px 30px;
 	background: var(--bg-play-icon);
 }
@@ -893,6 +918,7 @@ Videos SECTION
 	align-items: center;
 }
 .Second-Third-video .card2 > :nth-child(1) a{
+	cursor:not-allowed;
 	padding: 10px 30px 10px 30px;
 	background: var(--bg-play-icon);
 }
@@ -1068,6 +1094,7 @@ footer{
 	flex-direction: column;
 }
 .row3 .nav ul li{
+	cursor:not-allowed;
 	margin-right: 75px;
 	margin-bottom: 33px;
 }
@@ -1081,6 +1108,7 @@ footer{
 	padding: 8px 4px;
 }
 .row3 .icons ul li a i{
+	cursor:not-allowed;
 	font-size: 18px;
 	transition: 0.2s linear;
 }
@@ -1096,7 +1124,7 @@ footer{
 .sec8{
 	display: none;
 	flex-direction: column;
-  background-image:linear-gradient(-25deg, rgba(255, 255, 255, 0.8) 0 50%, rgba(19, 105, 162,0.7) 50% 100%);
+  background-image:linear-gradient(-25deg, rgba(255, 255, 255, 0.9) 0 50%, rgba(19, 105, 162,0.9) 50% 100%);
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
