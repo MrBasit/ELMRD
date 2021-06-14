@@ -219,7 +219,7 @@ nav .hd-searchbar i:hover{
 
 	.search-box{
 		height: 25px !important;
-		width: 25px !important;
+		/* width: 25px !important; */
 	}
 	.search-box input{
 		font-size: .6rem !important;
@@ -252,6 +252,10 @@ nav .hd-searchbar i:hover{
 	.search-box .search-data {
 		font-size: .5rem !important;
 	}
+	.sec8 .sign_Up {
+    width: 320px;
+    height: 280px;
+}
 }
 
 .search-box{
@@ -361,19 +365,73 @@ nav .hd-searchbar i:hover{
 }
 .search_list{
 	margin-top: 130px;
-	max-height: 78vh;
+	height: 78vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
-.search_list .search_item{
-	padding-top: .9em;
-	opacity: 0;
-	transform: translateY(5rem);
-	transition: transform .2s, opacity .3s;
-	transition-delay: calc(.05s * var(--i));
+.search_list::-webkit-scrollbar {
+  width: 10px;
+	display: none;
 }
+
+/* Track */
+.search_list::-webkit-scrollbar-track {
+  background: rgba(77, 140, 183,0.95); 
+	display: none;
+}
+ 
+/* Handle */
+.search_list::-webkit-scrollbar-thumb {
+  background: rgb(2, 1, 1); 
+	display: none;
+}
+
+/* Handle on hover */
+.search_list::-webkit-scrollbar-thumb:hover {
+  background: rgb(22, 22, 22); 
+	display: none;
+}
+
+.s-text{
+	color: white;
+	font-size: 3.3rem;
+	font-weight: 600;
+	text-align: center;
+}
+.loader {
+	display: none;
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid #3498db;
+  min-width: 60px;
+  min-height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin:5px auto ;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.search_list .search_item{
+	/* display: none; */
+	padding-top: .7em;
+	opacity: 1;
+	transform: translateX(450rem);
+	transition: transform .9s, opacity .3s;
+	transition-delay: calc(.1s * var(--i));
+	/* margin-right: -100%; */
+}
+
 .search_list .search_item + .search_item{
-	margin-top: 1em;
+	margin-top: .8em;
 	border-top: 1px solid #1369A2;
 }
 .search_list .search_item h2{
@@ -451,7 +509,7 @@ nav .hd-searchbar i:hover{
 .main__sidebar{
 	position: fixed;
 	background: rgba(0, 0, 0, 0.75);
-    width: 100%;
+  width: 100%;
 	height: 100%;
 	transition: all .2s linear;
 	

@@ -1,6 +1,9 @@
 
 // sec 4
 //slider  static
+let ul = document.getElementById("myUL");
+
+let li = ul.getElementsByClassName("search_item");
 
 window.addEventListener("load", function () {
   showSlides(slideIndex);
@@ -83,11 +86,12 @@ window.onresize = function() {
 const searchBtn = document.querySelector('.search-btn');
 const cancelBtn = document.querySelector('.cancel-btn');
 const searchBox = document.querySelector('.search-box');
-const searchInput = document.querySelector('input');
+const searchInput = document.querySelector('#myInput');
 const searchdata = document.querySelector('.search-data');
 const headerContainer = document.querySelector('.container-header');
 const searchMainOverlay = document.querySelector('.search_item_main');
 const header = document.querySelector('.header__nav');
+searchInput.value="";
 
 searchBtn.onclick = () => {
   header.classList.add("active-header");
@@ -97,6 +101,7 @@ searchBtn.onclick = () => {
   searchInput.classList.add('active');
   searchBtn.classList.add('active');
   cancelBtn.classList.add('active');
+ 
   if(searchInput.value != ""){
     let values = searchInput.value;
   searchdata.classList.remove('active');
@@ -104,6 +109,7 @@ searchBtn.onclick = () => {
   }else{
     searchdata.innerHTML = ""
   }
+  searchInput.value=""
 }
 
 cancelBtn.onclick = () => {
@@ -117,7 +123,37 @@ cancelBtn.onclick = () => {
   searchBtn.classList.remove('active');
   cancelBtn.classList.remove('active');
   searchdata.classList.add('active');
-  searchInput.value = '';
+  searchInput.value = "";
+  for (let i=0;i<li.length;i++) {
+
+    console.log(li[i]);
+    li[i].style.display="block";
+  }
+}
+
+
+function myInput() {
+  let input, filter, a, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  loader=document.getElementById("lod");
+
+  for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("h2")[0];
+      txtValue = a.textContent || a.innerText;
+    
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        loader.style.display="block";
+        setTimeout(function(){ 
+        loader.style.display="none";   
+       },400);
+        li[i].style.display = "";
+        // li[i].style.marginRight="0"
+      } else {
+          li[i].style.display = "none";  
+          // li[i].style.marginRight="-100%" 
+      }
+  }
 }
 
 // ---- searchbar end ----
@@ -203,11 +239,6 @@ window.onclick = function(event) {
   }
 }
 
-// const mail=document.getElementById("mail");
-// const subscribe=document.getElementById("subscribe")
-// subscribe.addEventListener("click",function(){
-//   mail.te
-// });
 function fun(){
   if(document.getElementById('mail').value!==''){
   document.getElementById('mail').value='';

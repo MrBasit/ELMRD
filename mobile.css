@@ -22,8 +22,11 @@ nav .nav-container{
     height: 60px !important;
 }
 .container-header {
-    max-width: 320px;
-    margin: auto;
+    max-width: 300px;
+    margin:auto;
+}
+#myUL{
+    margin:100px auto; 
 }
 
 .main-header-contant{
@@ -374,3 +377,10 @@ footer
  .row4 h5{
      font-size: 0.7em;
  }
+
+ .search_list .search_item p{
+	font-size: .8rem;
+	font-weight: 400;
+	margin-bottom: .3rem;
+	line-height: 1.3;
+}
