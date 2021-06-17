@@ -359,6 +359,9 @@ nav .hd-searchbar i:hover{
 	z-index: 999;
 	transition: .3s ease;
 }
+.search_item:hover{
+	background-color: rgb(54, 127, 175);
+}
 .search_list{
 	display: flex;
 	flex-direction: column;
