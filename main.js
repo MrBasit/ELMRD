@@ -88,6 +88,7 @@ const cancelBtn = document.querySelector('.cancel-btn');
 const searchBox = document.querySelector('.search-box');
 const searchInput = document.querySelector('#myInput');
 const searchdata = document.querySelector('.search-data');
+const navContainer = document.querySelector('.nav-container');
 const headerContainer = document.querySelector('.container-header');
 const searchMainOverlay = document.querySelector('.search_item_main');
 const header = document.querySelector('.header__nav');
@@ -96,6 +97,7 @@ searchInput.value="";
 searchBtn.onclick = () => {
   header.classList.add("active-header");
   headerContainer.classList.add('search_open');
+  navContainer.classList.add('width-90');
   searchMainOverlay.classList.add('search_open');
   searchBox.classList.add('active');
   searchInput.classList.add('active');
